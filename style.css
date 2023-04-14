@@ -1,0 +1,756 @@
+/* pure style */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --text-color: #FF8B38;
+    --content-color:#8b8787;
+}
+
+::-webkit-input-placeholder { 
+    color: var(--content-color);
+}
+
+body {
+    font-family: Myriad Pro;
+    font-weight: 400;
+}
+
+/* header style */
+
+header {
+    height: 70px;
+    background-color: black;
+    width: 100%;
+    display: flex;
+}
+
+.navbar {
+    max-width: 1100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.toggle {
+    display: none;
+    width: 40px;
+    height: 40px;
+    margin-top: 16px;
+}
+
+.line1, .line2, .line3 {
+    border-bottom: 1px solid #fff;
+    margin-bottom: 10px;
+}
+
+header img {
+    max-width: 85px;
+    width: 100%;
+    height: 30px;
+}
+
+.listNavbar li {
+    display: inline-block;
+    color: #fff;
+    margin-right: 45px;
+    cursor: pointer;
+}
+
+.listNavbar li:last-of-type {
+    margin-right: 0;
+}
+
+/* content style */
+
+.headerContent{
+    width: 100%;
+    margin: 0 auto;
+    background-image: url(./images/header-content.jpg);
+    background-size: contain;
+    height: 640px;
+}
+
+.header {
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 110px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    gap: 300px;
+}
+
+.introduce img {
+    max-width: 180px;
+    width: 100%;
+    height: 65px;
+}
+
+.introduce h1 {
+    font-size: 32px;
+    margin-top: 30px;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+
+.wrapperLine {
+    width: 60px;
+    border-top: solid 2px #fff;
+    margin-bottom: 40px;
+}
+
+.introduce p {
+    font-size: 14px;
+    margin-bottom: 40px;
+}
+
+.buttonLoad {
+    width: 140px;
+    height: 40px;
+    background-color: none;
+    border: solid 2px #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.signUp {
+    width: 71%;
+    height: 360px;
+    border-radius: 10px;
+}
+
+.headerTable {
+    width: 100%;
+    height: 50px;
+    background-color: #f1eaea;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerTable span {
+    color: black;
+    margin-right: 4px;
+}
+
+#colorText {
+    color: rgb(255, 157, 0);
+}
+
+.formSignUp {
+    width: 100%;
+    height: 250px;
+    background-color: #fff;
+}
+
+.formSignUp input {
+    width: calc(100%-30px);
+    height: 30px;
+    margin-left: 30px;
+    margin-top: 40px;
+    border: none;
+    border-bottom: solid 1px #f1eaea;
+    box-sizing: border-box;
+}
+
+.wrapperButton {
+    background-color: var(--text-color);
+    width: 100%;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.transition {
+    width: 100%;
+    background-color: #ddd7d7;
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+.wrapperTransition {
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+}
+
+.wrapperTransition img {
+    max-width: 320px;
+    width: 100%;
+}
+
+.wrapperTab {
+    max-width: 110px;
+    width: 100%;
+    height: 330px;
+}
+
+.wrapperTab div {
+    width: 110px;
+    height: calc(100%/3);
+    background-color: rgb(28, 27, 27);
+    border-bottom: solid 1px white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.wrapperTab div:first-of-type {
+    background-color: var(--text-color);
+}
+
+.listContent p {
+    margin-bottom: 60px;
+    font-size: 14px;
+    color: var(--content-color);
+}
+
+.listContent p:first-of-type{
+    color: black;
+}
+
+.listContent p:first-of-type {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.listContent p:nth-of-type(2) {
+    margin-bottom: 30px;
+}
+
+.buttonDownload {
+    width: 120px;
+    height: 40px;
+    cursor: pointer;
+    background-color: var(--text-color);
+    border: none;
+    color: #fff;
+    border-radius: 2px;
+}
+
+.landscape {
+    width: 100%;
+    padding: 100px 0;
+}
+
+.wrapperLandscape {
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.image-content {
+    width: 46%;
+    margin-right: 140px;
+}
+
+.spaceLine {
+    width: 70px;
+    border-bottom: solid 2px var(--text-color);
+    margin: 30px 0;
+}
+
+#title {
+    color: var(--content-color);
+}
+
+.wrapperOption {
+    margin-top: 50px;
+}
+
+.wrapperOption div {
+    display: inline-block;
+    margin-bottom: 40px;
+}
+
+.wrapperOption div img {
+    float: left;
+    margin-right: 30px;
+}
+
+.wrapperOption div p {
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.wrapperOption div p:last-of-type {
+    color: var(--content-color);
+}
+
+.building {
+    width: 100%;
+    background-color: #ddd7d7;
+    padding: 100px 0;
+}
+
+.wrapperBuilding {
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrapperBuilding .image-content {
+    margin-right: 0;
+}
+
+.contentBuilding {
+    margin-right: 140px;
+}
+
+.contentBuilding h3 {
+    margin-left: 30px;
+    font-weight: 400;
+}
+
+.contentLine p {
+    color: var(--content-color);
+    margin-bottom: 30px;
+}
+
+.process {
+    width: 100%;
+    padding: 100px 0;
+}
+
+.wrapperProcess {
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.wrapperProcess h1 {
+    font-weight: 400;
+    margin: 0;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.title p {
+    color: var(--content-color);
+}
+
+.card {
+    display: flex;
+    gap: 20px;
+}
+
+.wrapperCard {
+    text-align: center;
+}
+
+.wrapperCard img, p {
+    margin-bottom: 30px;
+} 
+
+.wrapperCard p:last-of-type {
+    color: var(--content-color);
+}
+
+.custom {
+    width: 100%;
+    background-image: url("./images/custom.jpg");
+    padding: 70px 0;
+}
+
+.wrapperCustom {
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapperCustom h1 {
+    color: #fff;
+    font-weight: 400;
+}
+
+.wrapperCustom p {
+    color: var(--content-color);
+}
+
+.wrapperCustom .buttonLoad {
+    color: #fff;
+}
+
+.wrapperCustom .spaceLine {
+    border-bottom: 2px solid #fff;
+}
+
+.contact {
+    width: 100%;
+    padding: 110px 0;
+}
+
+.wrapperContact {
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.contactTitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactTitle h1 {
+    font-weight: 400;
+}
+
+.contactTitle p {
+    color: var(--content-color);
+}
+
+.form {
+    width: 100%;
+    display: flex;
+}
+
+.form div {
+    width: 50%;
+}
+
+.form div input {
+    width: 95%;
+    height: 30px;
+    margin-bottom: 10px;
+    padding-left: 5px;
+    border: none;
+    border-bottom: solid 1px #f1eaea;
+}
+
+.message input {
+    padding-bottom: 81px;
+    float: right;
+}
+
+.wrapperButtonForm {
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* footer style */
+
+footer {
+    width: 100%;
+    background-color: black;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapperFooter {
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.wrapperFooter p {
+    color: var(--content-color);
+    margin-bottom: 0;
+    text-align: center;
+}
+
+/* responsive */
+
+/* screen 1260px */
+
+@media screen and (max-width: 1260px) {
+    .navbar, .wrapperProcess, .wrapperContact, .wrapperCustom, .header, .wrapperTransition, .wrapperLandscape, .wrapperBuilding {
+        max-width: 900px;
+    }
+
+    .header {
+        gap: 200px;
+    }
+
+    .image-content, .contentBuilding {
+        margin-right: 90px;
+    }
+}
+
+/* screen 992px */
+
+@media screen and (max-width: 992px) {
+    .navbar, .wrapperProcess, .wrapperContact, .wrapperCustom, .header, .wrapperTransition, .wrapperLandscape, .wrapperBuilding {
+        max-width: 760px;
+    }
+
+    .header {
+        gap: 120px;
+    }
+
+    .formSignUp {
+        height: 180px;
+    }
+
+    .wrapperButton {
+        height: 45px;
+    }
+
+    .formSignUp input {
+        margin-left: 15px;
+        margin-top: 20px;
+    }
+
+    .introduce h1 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .wrapperLine {
+        margin-bottom: 20px;
+    }
+
+    .headerContent {
+        height: 538px;
+    }
+
+    .wrapperTransition, .wrapperLandscape, .wrapperBuilding {
+        display: block;
+    }
+
+    .wrapperTab {
+        float: left;
+        margin-right: 40px;
+    }
+
+    .wrapperTab div {
+        height: calc(100%/4);
+    }
+
+    .transition, .landscape, .building, .process, .contact {
+        padding: 40px 0;
+    }
+
+    .listContent p {
+        margin-bottom: 20px;
+    }
+
+    .wrapperTransition img {
+        max-width: 500px;
+        margin-top: 60px;
+        margin-left: -44px;
+    }
+
+    .image-content {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .spaceLine {
+        margin: 20px 0;
+    }
+
+    .wrapperOption {
+        margin-top: 20px;
+    }
+
+    .wrapperOption div {
+        margin-bottom: 20px;
+    }
+
+    .title {
+        margin-bottom: 20px;
+    }
+
+    .wrapperCard img,p {
+        margin-bottom: 10px;
+    }
+
+    .headerTable span {
+        font-size: 14px;
+    }
+
+    .contentBuilding {
+        margin-right: 0;
+    }
+
+}
+
+/* screen 768px */
+
+@media screen and (max-width: 768px) {
+    .navbar, .wrapperProcess, .wrapperContact, .wrapperCustom, .header, .wrapperTransition, .wrapperLandscape, .wrapperBuilding {
+        max-width: 520px;
+    }
+    .header {
+        gap: 40px;
+        padding-top: 80px;
+    }
+
+    .headerContent {
+        height: 480px;
+    }
+
+    .introduce h1 {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    
+    .formSignUp input {
+        margin-left: 8px;
+        margin-top: 10px;
+    }
+
+    .wrapperTransition img {
+        margin: 0;
+    }
+
+    .listNavbar {
+        display: none;
+    }
+
+    .toggle {
+        display: block;
+    }
+
+    .formSignUp {
+        height: 140px;
+    }
+}
+
+/* screen 576px */
+
+@media screen and (max-width: 576px) {
+    .navbar, .wrapperProcess, .wrapperContact, .wrapperCustom, .header, .wrapperTransition, .wrapperLandscape, .wrapperBuilding {
+        max-width: 420px;
+    }
+
+    .transition, .landscape, .building, .process, .contact {
+        padding: 20px 0;
+    }
+
+    .listContent p {
+        margin-bottom: 10px;
+    }
+
+    .listContent p:nth-of-type(2) {
+        margin-bottom: 10px;
+    }
+
+    .spaceLine {
+        margin: 10px 0;
+    }
+
+    .contentLine p {
+        margin-bottom: 10px;
+    }
+
+    .card {
+        flex-direction: column;
+    }
+
+    .custom {
+        padding: 30px 0;
+    }
+
+    .wrapperButtonForm {
+        margin-top: 20px;
+    }
+
+}
+
+/* screen 480px */
+
+@media screen and (max-width: 480px) {
+    .navbar, .wrapperProcess, .wrapperContact, .wrapperCustom, .header, .wrapperTransition, .wrapperLandscape, .wrapperBuilding {
+        max-width: 320px;
+    }
+
+    .header {
+        flex-direction: column;
+        padding-top: 40px;
+    }
+
+    .formSignUp {
+        height: auto;
+    }
+
+    .formSignUp {
+        display: none;
+    }
+
+    .introduce h1 {
+        margin-top: 10px;
+    }
+
+    .introduce p {
+        margin-bottom: 10px;
+    }
+
+    .wrapperTransition img {
+        margin-top: 30px;
+    }
+
+    .wrapperOption div {
+        margin-bottom: 10px;
+    }
+
+    .title {
+        margin-bottom: 10px;
+    }
+
+    .card {
+        gap: 10px;
+    }
+
+    .signUp {
+        height: auto;
+    }
+}
+
+/* responsive screen 375px */
+
+@media screen and (max-width: 375px) {
+    .navbar, .wrapperProcess, .wrapperContact, .wrapperCustom, .header, .wrapperTransition, .wrapperLandscape, .wrapperBuilding {
+        max-width: 300px;
+    }
+
+    .listContent p:last-of-type {
+        display: none;
+    }
+
+    .wrapperProcess h1, .contactTitle h1, .wrapperCustom h1 {
+        font-size: 24px;
+    }
+
+    .wrapperFooter {
+        max-width: 260px;
+    }
+
+    .wrapperButtonForm {
+        margin-top: 10px;
+    }
+
+}
